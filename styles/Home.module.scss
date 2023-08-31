@@ -1,0 +1,27 @@
+.container {
+  padding: 0 2rem;
+  background: #000;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline {
+  border: #fff 1px solid;
+  border-radius: 0.75em;
+  padding: 1em;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
