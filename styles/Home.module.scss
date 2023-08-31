@@ -25,6 +25,57 @@
   align-items: center;
   width: 100%;
   height: 50vh;
+  position: relative;
+}
+.title {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 16px;
+}
+.iconCluster {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.infoIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+.infoIcon:hover {
+  background-color: #000000;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.wifiIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+.wifiIcon:hover {
+  background-color: #000000;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .outline {

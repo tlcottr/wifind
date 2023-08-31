@@ -3,6 +3,18 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
+const GridItem = () => {
+  return (
+    <div className={styles.gridItem}>
+      <div className={styles.title}>Title</div>
+      <div className={styles.iconCluster}>
+        <div className={styles.infoIcon}></div>
+        <div className={styles.wifiIcon}></div>
+      </div>
+    </div>
+  );
+};
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -17,12 +29,12 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.gridContainer}>
-          <div className={styles.gridItem}></div>
-          <div className={styles.gridItem}></div>
-          <div className={styles.gridItem}></div>
-          <div className={styles.gridItem}></div>
-          <div className={styles.gridItem}></div>
-          <div className={styles.gridItem}></div>
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
         </div>
       </main>
     </div>
