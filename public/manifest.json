@@ -5,7 +5,7 @@
   "scope": "/",
   "start_url": "/",
   "name": "Wi-Find",
-  "short_name": "Wi-FInd",
+  "short_name": "Wi-Find",
   "description": "A tool for locating reliable remote working environments in your neighborhood",
   "icons": [
     {
