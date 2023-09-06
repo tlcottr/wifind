@@ -27,6 +27,57 @@
   height: 50vh;
   position: relative;
 }
+.gridItemOverlay {
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  z-index: 100;
+  border-radius: 5%;
+  position: relative;
+}
+.closeCard {
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.overlayContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.overlayHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5em;
+  font-family: monospace;
+  font-weight: Bold;
+  font-size: 1.25em;
+}
+.QRSection {
+  width: 200px;
+  height: 200px;
+  border: #a7a7a7 solid 2px;
+  border-style: dashed;
+  border-radius: 10px;
+}
+.radioDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5em;
+  gap: 0.25em;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #a7a7a7;
+  border-radius: 100%;
+}
 .title {
   position: absolute;
   top: 24px;
@@ -54,12 +105,22 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .SVGflip {
+    fill: black;
+  }
 }
 .infoIcon:hover {
   background-color: #000000;
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  .SVGflip {
+    fill: white;
+  }
 }
 .wifiIcon {
   height: 40px;
@@ -70,14 +131,23 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .SVGflip {
+    fill: black;
+  }
 }
 .wifiIcon:hover {
   background-color: #000000;
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  .SVGflip {
+    fill: white;
+  }
 }
-
 .outline {
   border: #fff 1px solid;
   border-radius: 0.75em;
@@ -85,8 +155,10 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .gridContainer {
     width: 100%;
     flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
   }
 }
