@@ -4,7 +4,12 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { useState } from "react";
 
-function GridItem({ open, setOpen }) {
+type Props = {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+};
+
+function GridItem({ open, setOpen }: Props) {
   const InfoIcon = () => {
     return (
       <svg
@@ -96,11 +101,11 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.gridContainer}>
           <GridItem open={open} setOpen={setOpen} />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
+          <GridItem open={open} setOpen={setOpen} />
+          <GridItem open={open} setOpen={setOpen} />
+          <GridItem open={open} setOpen={setOpen} />
+          <GridItem open={open} setOpen={setOpen} />
+          <GridItem open={open} setOpen={setOpen} />
         </div>
       </main>
     </div>
