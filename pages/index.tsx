@@ -66,6 +66,7 @@ const Home = () => {
               open={openStates[index]}
               setOpen={() => toggleOpen(index)}
               title={item.title}
+              toggleOpen={false}
             />
           ))}
         </div>
