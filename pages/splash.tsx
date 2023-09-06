@@ -74,9 +74,12 @@ const Splash: NextPage = () => {
         <Tooltip
           id="my-tooltip-inline"
           style={{
-            backgroundColor: "#efefef",
-            color: "#222",
+            backgroundColor: "#000000",
+            color: "#ffffff",
             borderRadius: ".2em",
+            paddingLeft: ".75em",
+            paddingRight: ".75em",
+            stroke: "#ffffff",
           }}
         />
         <AppIcon />
