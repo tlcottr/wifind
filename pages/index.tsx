@@ -59,7 +59,7 @@ function GridItem({ open, setOpen }: Props) {
         <div className={styles.gridItemOverlay}>
           <div className={styles.overlayContainer}>
             <div className={styles.overlayHeader}>
-              <div>Cafe name</div>
+              <div>Cafe Name</div>
               <CloseCard />
             </div>
             <div className={styles.QRSection}></div>
