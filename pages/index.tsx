@@ -8,33 +8,33 @@ const Home = () => {
   const gridItemsData = [
     {
       id: 1,
-      title: "Cafe Name 1",
-      cafeName: "Cafe Name 1",
+      title: "September",
+      address: "Cafe Name 1",
     },
     {
       id: 2,
-      title: "Cafe Name 2",
-      cafeName: "Cafe Name 2",
+      title: "Little Skips East",
+      address: "Cafe Name 2",
     },
     {
       id: 3,
       title: "Cafe Name 3",
-      cafeName: "Cafe Name 1",
+      address: "Cafe Name 1",
     },
     {
       id: 4,
       title: "Cafe Name 4",
-      cafeName: "Cafe Name 2",
+      address: "Cafe Name 2",
     },
     {
       id: 5,
       title: "Cafe Name 5",
-      cafeName: "Cafe Name 1",
+      address: "Cafe Name 1",
     },
     {
       id: 6,
       title: "Cafe Name 6",
-      cafeName: "Cafe Name 2",
+      address: "Cafe Name 2",
     },
   ];
 
