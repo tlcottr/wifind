@@ -18,7 +18,7 @@ const Home = () => {
     },
     {
       id: 3,
-      title: "Cafe Name 3",
+      title: "Blue Bottle",
       address: "Cafe Name 1",
     },
     {
