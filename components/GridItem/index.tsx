@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
 
 type Props = {
@@ -51,7 +51,10 @@ function GridItem({ open, setOpen, title }: Props) {
   const toggleOpen = () => {
     setOpen(!open);
   };
-
+  const [wifi, setWifi] = useState(false);
+  const toggleWifi = () => {
+    setWifi(!wifi);
+  };
   return (
     <div className={styles.gridItem}>
       {open && (
@@ -63,9 +66,13 @@ function GridItem({ open, setOpen, title }: Props) {
                 <CloseCard />
               </div>
             </div>
-            <div className={styles.QRSection}></div>
+            {wifi ? (
+              <div className={styles.QRSection}></div>
+            ) : (
+              <div>Stat Card</div>
+            )}
             <div className={styles.radioDots}>
-              <div className={styles.dot}></div>
+              <div className={styles.dot} onClick={toggleWifi}></div>
               <div className={styles.dot}></div>
             </div>
           </div>
